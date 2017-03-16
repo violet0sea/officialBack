@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "amd": true
+    },
+    "extends": ["airbnb/base","eslint:recommended"],
+    "installedESLint": true,
+    "parser": "babel-eslint",
+    "globals": {
+        "$": true,
+        "_data": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["warn", "single"],
+        "semi": ["error", "always"],
+        "no-console": "off",
+        "prefer-template": "off",
+        "consistent-return": "off",
+        "no-param-reassign": "off",
+        "comma-dangle": ["error", "never"],
+        "padded-blocks": ["error", {
+            "switches": "always",
+            "classes": "never",
+            "blocks": "always"
+        }],
+        "no-underscore-dangle": ["error", { 
+            "allow": ["_data"],
+            "allowAfterThis": true
+        }],
+        "quote-props": ["error", "consistent"],
+        "jsx-quotes": ["error", "prefer-single"],
+        "react/jsx-uses-vars": 2,
+        "react/jsx-uses-react": 2,
+        "no-debugger": 2
+    }
+}
